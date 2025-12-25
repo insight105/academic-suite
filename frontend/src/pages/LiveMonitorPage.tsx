@@ -66,7 +66,7 @@ export default function LiveMonitorPage() {
         if (!batchId) return;
         try {
             const data = await batchApi.getBatchLiveStatus(batchId);
-            setLiveData(data);
+            setLiveData(data || []); // Ensure array even if backend returns null
             setLastUpdated(new Date());
         } catch (error) {
             console.error("Failed to fetch live data", error);
