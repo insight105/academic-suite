@@ -10,6 +10,7 @@ import {
   ChevronRight,
   CheckCircle2
 } from 'lucide-react';
+import saweriaBtn from '@/assets/saweria.svg';
 
 export default function Index() {
   const features = [
@@ -260,8 +261,17 @@ export default function Index() {
             <span className="font-semibold text-foreground">EduExam Pro</span>
           </div>
           <p className="text-sm text-muted-foreground">
-            © 2024 EduExam Pro. Platform Ujian Online untuk Pendidikan.
+            © 2025 EduExam Pro. Platform Ujian Online untuk Pendidikan.
           </p>
+          <div className="flex items-center gap-4 mt-2 md:mt-0">
+            <a href="https://saweria.co/insight105" target="_blank" rel="noopener noreferrer">
+              <img
+                src={saweriaBtn}
+                alt="Saweria"
+                className="h-8 hover:scale-105 transition-transform"
+              />
+            </a>
+          </div>
         </div>
       </footer>
     </div>
