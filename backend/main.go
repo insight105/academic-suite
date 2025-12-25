@@ -39,7 +39,7 @@ func main() {
 	// Middleware
 	app.Use(logger.New())
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173, http://localhost:8080", // Allow Frontend (Vite default & Custom)
+		AllowOrigins: "http://localhost:5173, http://localhost:8080, https://academic-suite.netlify.app", // Allow Frontend (Vite default & Custom & Netlify)
 		AllowHeaders: "Origin, Content-Type, Accept, Authorization",
 	}))
 
