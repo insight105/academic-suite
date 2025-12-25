@@ -4,6 +4,8 @@ import (
 	"academic-suite-backend/models"
 	"fmt"
 	"log"
+	"os"
+	"strings"
 	"time"
 
 	"github.com/spf13/viper"
@@ -17,11 +19,24 @@ var DB *gorm.DB
 func Connect() {
 	// ... (Connect logic remains same until seed call)
 	// 1. Load Config
-	viper.SetConfigName("config")
+	appEnv := os.Getenv("APP_ENV")
+	if appEnv == "prod" {
+		viper.SetConfigName("config.prod")
+		log.Println("Loading production configuration (config.prod.yml)")
+	} else {
+		viper.SetConfigName("config")
+		log.Println("Loading development configuration (config.yml)")
+	}
+
 	viper.SetConfigType("yml")
 	viper.AddConfigPath(".")
+
+	// Enable Environment Variable Overrides
+	viper.AutomaticEnv()
+	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
+
 	if err := viper.ReadInConfig(); err != nil {
-		log.Fatalf("Error reading config file: %v", err)
+		log.Printf("Warning: Error reading config file: %v. Using environment variables.", err)
 	}
 
 	host := viper.GetString("database.host")
