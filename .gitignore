@@ -1,0 +1,27 @@
+# System files
+.DS_Store
+Thumbs.db
+*.exe
+*.dll
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment
+.env
+*.env
+backend/config.yml
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+dist/
+/backend/academic-suite-backend.exe
+/backend/tmp_build.exe
+/database/*.tar
+
+# Documentation
+book/

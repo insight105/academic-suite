@@ -1,0 +1,569 @@
+{
+    "common": {
+        "dashboard": "Dasbor",
+        "quiz_bank": "Bank Kuis",
+        "exam_batches": "Sesi Ujian",
+        "my_exams": "Ujian Saya",
+        "institutions": "Institusi",
+        "subjects": "Mata Pelajaran",
+        "classes": "Kelas",
+        "users": "Pengguna",
+        "reports": "Laporan",
+        "history": "Riwayat",
+        "settings": "Pengaturan",
+        "logout": "Keluar",
+        "language": "Bahasa",
+        "switch_language": "Ganti Bahasa",
+        "no": "No",
+        "option": "Opsi",
+        "minutes_short": "m",
+        "cancel": "Batal",
+        "cancel_edit": "Batal Edit",
+        "back": "Kembali",
+        "saving": "Menyimpan...",
+        "save_changes": "Simpan Perubahan",
+        "minutes": "Menit",
+        "no_data": "Data tidak ditemukan",
+        "delete": "Hapus"
+    },
+    "exam_type": {
+        "daily_quiz": "Ulangan Harian",
+        "midterm": "UTS",
+        "final": "UAS",
+        "practice": "Latihan"
+    },
+    "question_type": {
+        "mcq": "Pilihan Ganda",
+        "true_false": "Benar/Salah",
+        "short_answer": "Isian Singkat",
+        "essay": "Esai"
+    },
+    "dashboard": {
+        "welcome": "Selamat Datang, {{name}}!",
+        "role_desc_admin": "Kelola sistem ujian dan pantau seluruh aktivitas",
+        "role_desc_teacher": "Buat quiz dan kelola pelaksanaan ujian",
+        "role_desc_student": "Lihat jadwal ujian dan kerjakan quiz",
+        "stats": {
+            "total_quiz": "Total Kuis",
+            "active_batch": "Sesi Aktif",
+            "scheduled": "Terjadwal",
+            "finished": "Selesai"
+        },
+        "active_exams": {
+            "title": "Ujian Aktif",
+            "desc": "Sesi ujian yang sedang berlangsung",
+            "in_progress": "Sedang Berlangsung",
+            "completed": "Selesai",
+            "already_taken": "Sudah Dikerjakan",
+            "start_exam": "Mulai Ujian",
+            "monitor": "Pantau",
+            "no_active": "Tidak ada ujian aktif saat ini",
+            "duration_min": "{{count}} menit",
+            "questions_count": "{{count}} soal"
+        },
+        "scheduled_exams": {
+            "title": "Jadwal Mendatang",
+            "desc": "Ujian yang akan datang",
+            "no_scheduled": "Tidak ada jadwal ujian"
+        },
+        "quick_actions": {
+            "title": "Aksi Cepat",
+            "desc": "Buat dan kelola ujian dengan mudah",
+            "create_quiz": "Buat Kuis Baru",
+            "schedule_exam": "Jadwalkan Ujian",
+            "view_reports": "Lihat Laporan"
+        }
+    },
+    "login": {
+        "hero": {
+            "title": "Sistem Kuis & Ujian Online",
+            "desc": "Platform ujian modern dengan keamanan tinggi, timer server-based, dan audit trail lengkap untuk sekolah dan universitas.",
+            "feature_timer": "Timer Server-Based",
+            "feature_timer_desc": "Waktu dihitung 100% dari server",
+            "feature_freeze": "Freeze & Resume",
+            "feature_freeze_desc": "Tangani gangguan massal dengan aman",
+            "feature_autosave": "Simpan Otomatis Jawaban",
+            "feature_autosave_desc": "Jawaban aman di localStorage terenkripsi"
+        },
+        "form": {
+            "title": "Masuk",
+            "desc": "Masukkan kredensial Anda untuk melanjutkan",
+            "email": "Email",
+            "password": "Kata Sandi",
+            "forgot_password": "Lupa kata sandi?",
+            "submit": "Masuk",
+            "demo_accounts": "Akun Demo (klik untuk isi otomatis)",
+            "success_title": "Login berhasil",
+            "success_desc": "Selamat datang di EduExam Pro",
+            "fail_title": "Login gagal",
+            "error_default": "Terjadi kesalahan"
+        }
+    },
+    "batches": {
+        "title": "Sesi Ujian",
+        "desc": "Kelola pelaksanaan dan penjadwalan ujian",
+        "schedule_exam": "Jadwalkan Ujian",
+        "in_progress": "Sedang Berlangsung",
+        "scheduled": "Terjadwal",
+        "finished": "Selesai",
+        "empty_title": "Belum Ada Sesi Ujian",
+        "empty_desc": "Jadwalkan pelaksanaan ujian untuk quiz yang sudah dibuat",
+        "status": {
+            "scheduled": "Terjadwal",
+            "active": "Aktif",
+            "frozen": "Di-freeze",
+            "finished": "Selesai"
+        },
+        "type": {
+            "REGULAR": "Reguler",
+            "MAKEUP": "Susulan",
+            "daily_quiz": "Ulangan Harian",
+            "midterm": "UTS",
+            "final": "UAS",
+            "practice": "Latihan"
+        },
+        "actions": {
+            "view_detail": "Lihat Detail",
+            "live_monitor": "Live Monitor",
+            "freeze": "Freeze Batch",
+            "resume": "Resume Batch",
+            "view_report": "Lihat Laporan",
+            "toast_freeze_success": "Batch di-freeze",
+            "toast_freeze_desc": "Semua attempt peserta telah dihentikan sementara",
+            "toast_freeze_fail": "Gagal freeze batch",
+            "toast_resume_success": "Batch dilanjutkan",
+            "toast_resume_desc": "Peserta dapat melanjutkan ujian",
+            "toast_resume_fail": "Gagal resume batch"
+        },
+        "card": {
+            "quiz_not_found": "Quiz tidak ditemukan",
+            "duration": "Durasi: {{count}} menit",
+            "participants": "{{count}} peserta",
+            "ongoing_label": "Ujian sedang berlangsung",
+            "frozen_label": "Ujian di-freeze",
+            "frozen_at": "Frozen: {{time}}"
+        }
+    },
+    "quizzes": {
+        "title": "Bank Kuis",
+        "desc": "Kelola bank soal dan quiz untuk ujian",
+        "create_new": "Buat Kuis Baru",
+        "tabs": {
+            "active": "Kuis Aktif",
+            "archive": "Arsip"
+        },
+        "empty": {
+            "title": "Belum Ada Kuis",
+            "desc": "Mulai buat quiz pertama Anda untuk mengelola ujian siswa",
+            "archive_title": "Tidak ada kuis di arsip",
+            "archive_desc": "Kuis yang dinonaktifkan akan muncul di sini."
+        },
+        "actions": {
+            "edit": "Edit Kuis",
+            "duplicate": "Duplikat",
+            "reactivate": "Aktifkan Kembali",
+            "archive": "Arsipkan",
+            "delete": "Hapus",
+            "view_detail": "Lihat Detail",
+            "schedule": "Jadwalkan",
+            "toast_activate": "Kuis berhasil diaktifkan",
+            "toast_archive": "Kuis berhasil diarsipkan",
+            "toast_fail": "Gagal mengubah status kuis",
+            "export_csv": "Export CSV",
+            "print_pdf": "Cetak PDF",
+            "back_to_quiz": "Kembali ke Daftar Kuis",
+            "back_to_list": "Kembali ke Daftar Kuis",
+            "add_question": "Tambah Soal",
+            "save_quiz": "Simpan Kuis",
+            "download_template": "Download Template",
+            "import_file": "Import File",
+            "template": "Template",
+            "import": "Import"
+        },
+        "card": {
+            "questions": "{{count}} soal",
+            "points": "{{count}} poin",
+            "passing_score": "KKM: {{score}}"
+        }
+    },
+    "details": {
+        "total_questions": "Total Soal",
+        "total_points": "Poin Total",
+        "kkm": "KKM",
+        "question_list": "Daftar Soal",
+        "explanation": "Penjelasan:",
+        "correct_answer": "Jawaban Benar",
+        "no_questions": "Belum ada soal",
+        "no_questions_desc": "Quiz ini belum memiliki soal.",
+        "not_found": "Quiz Tidak Ditemukan",
+        "data_unavailable": "Data quiz tidak tersedia",
+        "correct": "Benar",
+        "no_description": "Tidak ada deskripsi"
+    },
+    "builder": {
+        "create_title": "Buat Kuis Baru",
+        "edit_title": "Edit Kuis",
+        "subtitle": "Atur informasi kuis dan kelola daftar soal",
+        "info_title": "Informasi Kuis",
+        "stats_title": "Statistik Kuis",
+        "drag_drop": "Geser kartu soal untuk mengubah urutan",
+        "empty_title": "Belum Ada Soal",
+        "empty_desc": "Mulai tambahkan soal atau import dari file",
+        "labels": {
+            "title": "Judul Kuis",
+            "desc": "Deskripsi",
+            "type": "Tipe Ujian",
+            "kkm": "KKM (Passing Score)",
+            "status": "Status"
+        },
+        "placeholders": {
+            "title": "Masukkan judul kuis...",
+            "desc": "Masukkan deskripsi singkat tentang kuis ini..."
+        },
+        "toast": {
+            "question_added": "Soal berhasil ditambahkan",
+            "question_updated": "Soal berhasil diperbarui",
+            "question_deleted": "Soal berhasil dihapus",
+            "success_update": "Kuis berhasil diperbarui",
+            "success_create": "Kuis berhasil dibuat",
+            "save_fail": "Gagal menyimpan kuis"
+        },
+        "validation": {
+            "title_required": "Judul kuis harus diisi!",
+            "min_question": "Kuis minimal harus memiliki 1 soal!"
+        },
+        "delete_dialog": {
+            "title": "Hapus Soal?",
+            "desc": "Soal yang dihapus tidak dapat dikembalikan. Pastikan Anda yakin ingin menghapus soal ini.",
+            "cancel": "Batal",
+            "confirm": "Hapus"
+        },
+        "question_form": {
+            "add_title": "Tambah Soal Baru",
+            "edit_title": "Edit Soal",
+            "desc": "Buat atau edit soal untuk quiz ini",
+            "type": "Tipe Soal",
+            "points": "Poin",
+            "question": "Pertanyaan",
+            "question_placeholder": "Tulis pertanyaan di sini...",
+            "options": "Pilihan Jawaban",
+            "options_help": "Klik ikon centang untuk menandai jawaban benar",
+            "option_placeholder": "Opsi",
+            "add_option": "Tambah Opsi",
+            "explanation": "Penjelasan (Opsional)",
+            "explanation_placeholder": "Penjelasan jawaban untuk siswa setelah ujian...",
+            "cancel": "Batal",
+            "save": "Simpan",
+            "add": "Tambah Soal",
+            "true": "Benar",
+            "false": "Salah"
+        },
+        "preview": {
+            "title": "Preview Soal",
+            "desc": "Tampilan soal seperti yang akan dilihat siswa",
+            "correct_answer": "(Jawaban Benar)",
+            "short_answer_placeholder": "Jawaban singkat...",
+            "essay_placeholder": "Esai...",
+            "explanation": "Penjelasan",
+            "close": "Tutup"
+        },
+        "import": {
+            "title": "Import Soal dari File",
+            "desc": "Upload file Excel (.xlsx) atau CSV untuk mengimport soal secara massal",
+            "download_template": "Download Template",
+            "download_desc": "Gunakan template untuk memastikan format yang benar",
+            "upload_label": "Upload File",
+            "drag_drop": "Klik untuk upload atau drag & drop",
+            "format_info": "Format: .xlsx, .xls, atau .csv",
+            "success_title": "Import berhasil!",
+            "success_desc": "{{count}} soal telah ditambahkan",
+            "valid_count": "{{count}} soal valid siap diimport",
+            "more_count": "...dan {{count}} soal lainnya",
+            "columns": {
+                "title": "Format Kolom:",
+                "headers": {
+                    "question": "Teks pertanyaan (wajib)",
+                    "type": "mcq / true_false / short_answer / essay (wajib)",
+                    "points": "Nilai poin (default: 10)",
+                    "options": "Pilihan jawaban",
+                    "correct": "Huruf jawaban benar (A/B/C/D)",
+                    "explanation": "Penjelasan jawaban (opsional)"
+                }
+            },
+            "errors": {
+                "file_format": "Format file tidak didukung. Gunakan .csv, .xlsx, atau .xls",
+                "read_error": "Error membaca file: {{error}}",
+                "parse_csv": "Error parsing CSV: {{error}}",
+                "parse_excel": "Error parsing Excel: {{error}}",
+                "empty_question": "Baris {{row}}: Pertanyaan kosong",
+                "invalid_type": "Baris {{row}}: Tipe soal tidak valid ({{type}})",
+                "min_options": "Baris {{row}}: Minimal 2 opsi jawaban diperlukan",
+                "no_correct": "Baris {{row}}: Jawaban benar tidak ditentukan"
+            },
+            "cancel": "Batal",
+            "import_btn": "Import {{count}} Soal"
+        }
+    },
+    "my_exams": {
+        "title": "Ujian Saya",
+        "desc": "Lihat dan kerjakan ujian yang tersedia",
+        "active": {
+            "title": "Ujian Aktif"
+        },
+        "upcoming": {
+            "title": "Jadwal Mendatang",
+            "scheduled_badge": "Terjadwal"
+        },
+        "empty": {
+            "title": "Tidak Ada Ujian",
+            "desc": "Saat ini tidak ada ujian yang tersedia untuk Anda. Hubungi guru jika Anda yakin seharusnya ada ujian."
+        },
+        "actions": {
+            "start": "Mulai Ujian",
+            "already_taken": "Sudah Dikerjakan"
+        }
+    },
+    "history": {
+        "title": "Riwayat Ujian",
+        "desc": "Lihat hasil dan riwayat semua ujian Anda",
+        "empty": {
+            "title": "Belum Ada Riwayat",
+            "desc": "Anda belum menyelesaikan ujian apapun. Riwayat akan muncul setelah Anda mengerjakan ujian."
+        },
+        "status": {
+            "submitted": "Dikumpulkan",
+            "expired": "Waktu Habis",
+            "reset_by_admin": "Di-reset Admin",
+            "active": "Belum Selesai"
+        },
+        "card": {
+            "answers_count": "{{count}} jawaban",
+            "score": "Skor"
+        }
+    },
+    "exam": {
+        "loading": "Memuat ujian...",
+        "error": {
+            "batch_not_found": "Batch tidak ditemukan",
+            "load_failed": "Gagal memuat ujian"
+        },
+        "security": {
+            "focus_lost": "Peringatan Keamanan",
+            "focus_lost_desc": "Dilarang meninggalkan halaman ujian! Aktivitas ini tercatat.",
+            "window_blur": "Peringatan Keamanan",
+            "window_blur_desc": "Dilarang beralih window/aplikasi! Aktivitas ini tercatat.",
+            "copy": "Dilarang menyalin soal!",
+            "paste": "Dilarang menempel (paste)!",
+            "context_menu": "Klik kanan dinonaktifkan!"
+        },
+        "submitted": {
+            "title": "Ujian Telah Dikumpulkan",
+            "score": "Skor: {{score}}/{{total}}",
+            "view_history": "Lihat Riwayat",
+            "success_title": "Ujian berhasil dikumpulkan!",
+            "success_desc": "Skor Anda: {{score}}/{{total}}",
+            "fail_title": "Gagal mengumpulkan"
+        },
+        "frozen": {
+            "title": "Ujian Di-freeze",
+            "desc": "Terjadi gangguan massal. Silakan tunggu hingga ujian dilanjutkan oleh pengawas.",
+            "safe_note": "Jawaban Anda telah tersimpan dengan aman."
+        },
+        "header": {
+            "question_nav": "Soal {{current}} dari {{total}}"
+        },
+        "footer": {
+            "prev": "Sebelumnya",
+            "next": "Selanjutnya",
+            "submit": "Kumpulkan",
+            "answered_count": "{{count}}/{{total}} dijawab"
+        },
+        "dialog": {
+            "submit": {
+                "title": "Kumpulkan Ujian?",
+                "desc": "Anda telah menjawab {{answered}} dari {{total}} soal.",
+                "warning": "Masih ada {{count}} soal yang belum dijawab!",
+                "irrevocable": "Setelah dikumpulkan, Anda tidak dapat mengubah jawaban.",
+                "cancel": "Batal",
+                "confirm": "Ya, Kumpulkan"
+            },
+            "time_up": {
+                "title": "Waktu Habis!",
+                "desc": "Waktu pengerjaan ujian telah habis. Jawaban Anda akan dikumpulkan secara otomatis.",
+                "confirm": "Kumpulkan Sekarang"
+            }
+        }
+    },
+    "users": {
+        "title": "Pengguna",
+        "subtitle": "Kelola pengguna sistem dan hak akses.",
+        "add_user": "Tambah Pengguna",
+        "import_excel": "Import (Excel)",
+        "filter_institution": "Filter Institusi",
+        "all_institutions": "Semua Institusi",
+        "no_users": "Tidak ada pengguna ditemukan.",
+        "edit_user": "Edit Pengguna",
+        "edit_desc": "Perbarui detail pengguna di sini.",
+        "create_user": "Tambah Pengguna Baru",
+        "create_desc": "Buat akun pengguna baru.",
+        "toast": {
+            "load_fail": "Gagal memuat pengguna",
+            "update_success": "Pengguna berhasil diperbarui",
+            "create_success": "Pengguna berhasil dibuat",
+            "op_fail": "Operasi gagal"
+        },
+        "table": {
+            "name": "Nama",
+            "email": "Email",
+            "institution": "Institusi",
+            "role": "Peran",
+            "joined": "Bergabung",
+            "actions": "Aksi"
+        }
+    },
+    "institutions": {
+        "title": "Institusi",
+        "subtitle": "Kelola institusi pendidikan yang terdaftar.",
+        "add_institution": "Tambah Institusi",
+        "edit_details": "Edit Detail",
+        "manage_users": "Kelola Pengguna",
+        "deactivate": "Nonaktifkan",
+        "table": {
+            "name": "Nama",
+            "address": "Alamat",
+            "type": "Tipe",
+            "status": "Status"
+        }
+    },
+    "subjects": {
+        "title": "Master Mata Pelajaran",
+        "subtitle": "Kelola mata pelajaran dan penugasan guru.",
+        "add_subject": "Tambah Mapel",
+        "edit_subject": "Edit Mapel",
+        "delete": "Hapus",
+        "save_changes": "Simpan Perubahan",
+        "cancel": "Batal",
+        "basic_info": "Informasi Dasar",
+        "assigned_teachers": "Guru Pengampu",
+        "toast": {
+            "load_fail": "Gagal memuat data",
+            "update_success": "Mata pelajaran diperbarui",
+            "create_success": "Mata pelajaran dibuat"
+        },
+        "form": {
+            "code": "Kode Mata Pelajaran",
+            "name": "Nama Mata Pelajaran",
+            "credits": "SKS / Bobot",
+            "placeholders": {
+                "code": "Contoh: MAT-X",
+                "name": "Contoh: Matematika Wajib"
+            }
+        },
+        "table": {
+            "code": "Kode",
+            "name": "Nama",
+            "credits": "SKS",
+            "teachers": "Guru Pengampu"
+        }
+    },
+    "classes": {
+        "title": "Manajemen Kelas",
+        "subtitle": "Kelola kelas, dosen pengampu, dan mahasiswa",
+        "create_class": "Buat Kelas Baru",
+        "delete_confirm": "Apakah Anda yakin ingin menghapus kelas ini?",
+        "students_count": "{{count}} Mahasiswa",
+        "no_teacher": "Belum ada guru",
+        "unknown_subject": "Mapel tidak diketahui"
+    },
+    "reports": {
+        "title": "Laporan & Audit",
+        "subtitle": "Analisis hasil ujian dan pantau aktivitas",
+        "export": "Ekspor",
+        "select_batch": "Pilih Batch",
+        "select_batch_desc": "Pilih batch ujian dari dropdown di atas untuk melihat laporan",
+        "select_placeholder": "Pilih batch ujian",
+        "stats": {
+            "participants": "Total Peserta",
+            "avg_score": "Rata-rata Nilai",
+            "highest_score": "Nilai Tertinggi",
+            "submitted": "Dikumpulkan"
+        },
+        "tabs": {
+            "attempts": "Hasil Peserta",
+            "logs": "Log Kejadian"
+        },
+        "search_participant": "Cari peserta...",
+        "table": {
+            "student": "Nama Siswa",
+            "status": "Status",
+            "score": "Skor",
+            "percentage": "Persentase",
+            "duration": "Durasi",
+            "submitted": "Waktu Submit"
+        },
+        "logs": {
+            "title": "Log Kejadian",
+            "subtitle": "Jejak audit semua kejadian dalam batch ini",
+            "select_student": "Pilih Siswa Terlebih Dahulu",
+            "select_student_desc": "Silakan kembali ke tab Hasil Peserta dan klik baris nama siswa untuk melihat riwayat aktivitas mereka secara detail.",
+            "back_to_results": "Kembali ke Hasil Peserta",
+            "activity_log": "Log Aktivitas",
+            "refresh": "Segarkan Log",
+            "loading": "Memuat data log...",
+            "no_activity": "Tidak ada aktivitas mencurigakan atau kejadian yang tercatat untuk siswa ini."
+        },
+        "toast": {
+            "export_fail": "Gagal ekspor",
+            "export_fail_desc": "Terjadi kesalahan saat mengunduh laporan",
+            "select_batch": "Pilih Batch",
+            "select_batch_req": "Silakan pilih batch terlebih dahulu",
+            "load_fail": "Gagal memuat log",
+            "viewing_log": "Melihat log untuk"
+        },
+        "no_data": "Data tidak ditemukan"
+    },
+    "settings": {
+        "title": "Pengaturan",
+        "subtitle": "Kelola profil dan preferensi akun Anda",
+        "profile": {
+            "title": "Profil",
+            "desc": "Informasi dasar akun Anda",
+            "name": "Nama Lengkap",
+            "email": "Email",
+            "role": "Peran",
+            "save": "Simpan Perubahan"
+        },
+        "security": {
+            "title": "Keamanan",
+            "desc": "Pengaturan keamanan akun",
+            "current_password": "Kata Sandi Saat Ini",
+            "new_password": "Kata Sandi Baru",
+            "confirm_password": "Konfirmasi Kata Sandi",
+            "change_password": "Ubah Kata Sandi"
+        },
+        "notifications": {
+            "title": "Notifikasi",
+            "desc": "Kelola preferensi notifikasi",
+            "email": {
+                "label": "Email Notifikasi",
+                "desc": "Terima notifikasi via email"
+            },
+            "schedule": {
+                "label": "Jadwal Ujian",
+                "desc": "Pengingat sebelum ujian dimulai"
+            },
+            "results": {
+                "label": "Hasil Ujian",
+                "desc": "Notifikasi saat hasil keluar"
+            }
+        },
+        "appearance": {
+            "title": "Tampilan",
+            "desc": "Kustomisasi tampilan aplikasi",
+            "dark_mode": {
+                "label": "Mode Gelap",
+                "desc": "Gunakan tema gelap"
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: academic-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Password.1
+      POSTGRES_DB: academic_suite
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    container_name: academic-backend
+    restart: always
+    ports:
+      - "8060:8060"
+    volumes:
+      - ./backend/config.docker.yml:/app/config.yml
+    depends_on:
+      - db
+    networks:
+      - academic-network
+
+  frontend:
+    build: ./frontend
+    container_name: academic-frontend
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - academic-network
+
+networks:
+  academic-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
