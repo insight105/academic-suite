@@ -18,7 +18,7 @@
   </p>
 
   <a href="https://academic-suite.netlify.app">🌐 <b>Live Demo</b></a> •
-  <a href="https://hashnode.com/@insight105">📚 <b>Read the Book</b></a> •
+  <a href="https://insight105.hashnode.dev">📚 <b>Read the Book</b></a> •
   <a href="https://youtube.com/@insight105">📺 <b>Watch the Story</b></a>
 </div>
 
@@ -150,7 +150,7 @@ If you find this project useful, please consider giving it a ⭐ **Star** or sup
     <img src="https://img.shields.io/badge/Traktir_Kopi-Saweria-orange?style=for-the-badge&logo=ko-fi" alt="Saweria" />
   </a>
   
-  <a href="https://hashnode.com/@insight105">
+  <a href="https://insight105.hashnode.dev">
     <img src="https://img.shields.io/badge/Read_My_Blog-Hashnode-blue?style=for-the-badge&logo=hashnode" alt="Hashnode" />
   </a>
 
