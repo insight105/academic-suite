@@ -1,4 +1,28 @@
-# Academic Suite (LMS)
+<div align="center">
+  <h1>🎓 Academic Suite (LMS)</h1>
+  
+  <p>
+    <b>High-Stakes Examination Platform built with Golang & React.</b>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Built_in-4_Days-orange?style=for-the-badge&logo=clock" alt="Built in 4 Days" />
+    <img src="https://img.shields.io/badge/Workflow-AI--Augmented-blueviolet?style=for-the-badge&logo=openai" alt="AI Augmented" />
+    <img src="https://img.shields.io/badge/Status-Open_Source-green?style=for-the-badge&logo=github" alt="Open Source" />
+    <img src="https://img.shields.io/badge/Status-Open_Source-green?style=for-the-badge&logo=github" alt="Open Source" />
+  </p>
+
+  <p>
+    Architected & Managed by <b>Insight 105</b>.<br/>
+    <i>Shipping production-grade software at AI speed.</i>
+  </p>
+
+  <a href="https://academic-suite.netlify.app">🌐 <b>Live Demo</b></a> •
+  <a href="https://hashnode.com/@insight105">📚 <b>Read the Book</b></a> •
+  <a href="https://youtube.com/@insight105">📺 <b>Watch the Story</b></a>
+</div>
+
+<br />
 
 **Academic Suite** is a modern, fullstack Learning Management System (LMS) designed for high-stakes examinations. It is built to be resilient, secure, and scalable, featuring a robust exam engine, real-time monitoring, and comprehensive analytical reporting.
 
@@ -114,5 +138,31 @@ For a deep dive into how this system was built, refer to the **book** included i
     *   Anti-Cheating Implementation
 
 ---
+
+## 🤝 Support & Connect
+
+Maintained by **Insight 105**. I share tutorials on Software Architecture, .NET, Go, and AI Engineering.
+
+If you find this project useful, please consider giving it a ⭐ **Star** or supporting via:
+
+<div align="left">
+  <a href="https://saweria.co/insight105">
+    <img src="https://img.shields.io/badge/Traktir_Kopi-Saweria-orange?style=for-the-badge&logo=ko-fi" alt="Saweria" />
+  </a>
+  
+  <a href="https://hashnode.com/@insight105">
+    <img src="https://img.shields.io/badge/Read_My_Blog-Hashnode-blue?style=for-the-badge&logo=hashnode" alt="Hashnode" />
+  </a>
+
+  <a href="https://youtube.com/@insight105">
+    <img src="https://img.shields.io/badge/Subscribe-YouTube-red?style=for-the-badge&logo=youtube" alt="YouTube" />
+  </a>
+</div>
+
+---
+
+<p align="center">
+  Made with ❤️ and 🤖 by <a href="https://github.com/insight105">Insight 105</a>
+</p>
 
 **Happy Coding! 🚀**
