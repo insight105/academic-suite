@@ -9,7 +9,6 @@
     <img src="https://img.shields.io/badge/Built_in-5_Days-orange?style=for-the-badge&logo=clock" alt="Built in 5 Days" />
     <img src="https://img.shields.io/badge/Workflow-AI--Augmented-blueviolet?style=for-the-badge&logo=openai" alt="AI Augmented" />
     <img src="https://img.shields.io/badge/Status-Open_Source-green?style=for-the-badge&logo=github" alt="Open Source" />
-    <img src="https://img.shields.io/badge/Status-Open_Source-green?style=for-the-badge&logo=github" alt="Open Source" />
   </p>
 
   <p>
@@ -18,7 +17,7 @@
   </p>
 
   <a href="https://academic-suite.netlify.app">🌐 <b>Live Demo</b></a> •
-  <a href="https://insight105.hashnode.dev">📚 <b>Read the Book</b></a> •
+  <a href="https://dev.to/insight105/academic-suite-go-react-42dj">📚 <b>Read the Book</b></a> •
   <a href="https://youtube.com/@insight105">📺 <b>Watch the Story</b></a>
 </div>
 
@@ -150,7 +149,7 @@ If you find this project useful, please consider giving it a ⭐ **Star** or sup
     <img src="https://img.shields.io/badge/Traktir_Kopi-Saweria-orange?style=for-the-badge&logo=ko-fi" alt="Saweria" />
   </a>
   
-  <a href="https://insight105.hashnode.dev">
+  <a href="https://dev.to/insight105">
     <img src="https://img.shields.io/badge/Read_My_Blog-Hashnode-blue?style=for-the-badge&logo=hashnode" alt="Hashnode" />
   </a>
 
